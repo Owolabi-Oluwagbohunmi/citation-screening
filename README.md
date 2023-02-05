@@ -13,3 +13,18 @@ The Data Set we will be using is the https://github.com/CLEF-TAR/tar dataset and
 Considering the constraints stated above we have made sure to follow the policy to the letter to avoid our IP address from being blocked. Hence, the custom settings for our SCRAPY spyder for both test and train document extraction has been properly handled to cater to the requirements.
 
 At the time of writing this, 125,000 pubmed train document XML files have been downloaded in 13 hours and the pubmed test document xml is scheduled to be downloaded from 1 p.m, Sunday, 05 Feb 2023.
+
+## Setup
+First create a virtual environment. 
+
+This project used Anaconda and we named the virtual environment citation-screening.
+1. conda create -n citation-screening anaconda
+2. source activate citation-screening
+
+
+We then install Scrapy using the command 
+1. conda install -c conda-forge scrapy
+
+## Scrapy Project Initialisation
+scrapy startproject pubmedxml
+
