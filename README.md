@@ -28,3 +28,8 @@ We then install Scrapy using the command
 ## Scrapy Project Initialisation
 scrapy startproject pubmedxml
 
+## Scrapy Custom settings
+Our scrapy project has been set to make 3 url requests within a second and the state is saved in pubmedxml/crawls to allow the project to be stopped and started from the where it stopped.
+** scrapy crawl pubmeddoc -s JOBDIR=crawls/pubmeddoc **
+
+
