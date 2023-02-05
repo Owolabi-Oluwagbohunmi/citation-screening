@@ -9,11 +9,11 @@ class PubmedSpider(scrapy.Spider):
     custom_settings = {
         'CONCURRENT_REQUESTS_PER_IP': 3,
         'DOWNLOAD_DELAY': 0.33,
-        'JOBDIR': 'crawls/test_pubmeddoc'
+        'JOBDIR': 'crawlstest/test_pubmeddoc'
     }
 
     def extract_data():
-        with open('pubmedxml/spiders/trainpubmed.txt', 'r') as f:
+        with open('pubmedxml/spiders/testpubmed.txt', 'r') as f:
             train_pid = f.read()
 
             train_pids = train_pid.split('\n')
