@@ -33,5 +33,5 @@ class PubmedSpider(scrapy.Spider):
     def parse(self, response):
         page = response.url.split('&')[-3].split('=')[-1]
         filename = f'pubmed-{page}.xml'
-        Path('pid_doc/'+filename).write_bytes(response.body)
+        Path('pid_doc_train/'+filename).write_bytes(response.body)
         self.log(f'Saved file {filename}')
